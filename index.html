@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play Math!</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #ff9999, #66b3ff);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .sample {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .exercise {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .exercise input[type="number"] {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .exercise button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Let's Play Math!</header>
+    <div class="container">
+        <h2>Let's Learn About Addition!</h2>
+        <p>Addition is when we put things together. Imagine you have 3 apples and a friend gives you 2 more. How many apples do you have in total?</p>
+        <div class="sample">
+            3 apples + 2 apples = 5 apples
+        </div>
+        <h2>Try it Yourself!</h2>
+        <div class="exercise">
+            <p>You have 4 cookies. Your grandma gives you another </p>
+            <input type="number" id="number1">
+            <p> cookies. How many cookies do you have in total?</p>
+            <button onclick="checkAnswer()">Check Answer</button>
+        </div>
+        <script>
+            function checkAnswer() {
+                let num1 = parseInt(document.getElementById("number1").value);
+                let answer = 4 + num1;
+                alert("You have " + answer + " cookies in total!");
+            }
+        </script>
+    </div>
+    <footer>&copy; 2024 Let's Play Math!</footer>
+</body>
+</html>
